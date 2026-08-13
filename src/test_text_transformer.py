@@ -1,6 +1,6 @@
 import unittest
 from text_transformer import split_nodes_delimiter, text_to_textnodes, extract_markdown_images, extract_markdown_links, split_nodes_image, split_nodes_link
-from textnode import TextType, TextNode
+from text_node import TextType, TextNode
 
 
 class TestSplitDelimiterCode(unittest.TestCase):
