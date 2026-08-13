@@ -1,7 +1,7 @@
-from block_transformer import BlockType, markdown_to_block, block_to_BlockType
-from htmlnode import HTMLNode, LeafNode, ParentNode
-from text_transformer import text_to_textnodes
-from text_node import text_node_to_leaf_node
+from src.block_transformer import BlockType, markdown_to_block, block_to_BlockType
+from src.htmlnode import HTMLNode, LeafNode, ParentNode
+from src.text_transformer import text_to_textnodes
+from src.text_node import text_node_to_leaf_node
 
 
 def markdown_to_html_node(markdown: str) -> HTMLNode: #The HTML node that gonna be returned is Grandparent
