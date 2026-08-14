@@ -91,11 +91,6 @@ class TestParentNode(unittest.TestCase):
             '<div><span href="https://mari"><p><b href="https://sigma">grandgrandchild</b></p></span></div>',
         )
 
-    def test_children_missing(self):
-        father_with_no_child_node = ParentNode("b", [])
-        with self.assertRaises(ValueError):
-            father_with_no_child_node.to_html()
-        
 
 
 if __name__ == "__main__":

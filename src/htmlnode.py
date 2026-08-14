@@ -25,9 +25,9 @@ class LeafNode(HTMLNode):
         super().__init__(tag=tag, value=value, props=props)
     
     def to_html(self):
-        if self.value is None or self.value == "":
+        if self.value is None:
             raise ValueError("value is missing")
-        if self.tag is None or self.tag == "":
+        if self.tag is None:
             return self.value #if it just raw text
         
         props_str = self.props_to_html() if self.props else "" # The only time when the format slightly different is when the tag different
@@ -45,9 +45,9 @@ class ParentNode(HTMLNode):
         super().__init__(tag=tag, children=children, props=props)
 
     def to_html(self):
-        if self.tag is None or self.tag == "":
+        if self.tag is None:
             raise ValueError("tag is missing")
-        if self.children is None or self.children == [] or self.children == [""]:
+        if self.children is None:
             raise ValueError("children is missing.... What?")
         
         props_str = self.props_to_html() if self.props else "" # The only time when the format slightly different is when the tag different
