@@ -1,5 +1,5 @@
 class HTMLNode():
-    def __init__(self, tag: str|None=None, value: str|None=None, children: list[HTMLNode]|None=None, props: dict|None=None):
+    def __init__(self, tag: str|None=None, value: str|None=None, children: list[HTMLNode]|list[LeafNode]|None=None, props: dict|None=None):
         self.tag = tag #A string representing the HTML tag name (e.g. "p", "a", "h1", etc.)
         self.value = value #A string representing the value of the HTML tag (e.g. the text inside a paragraph)
         self.children = children #  A list of HTMLNode objects representing the children of this node
@@ -41,7 +41,7 @@ class LeafNode(HTMLNode):
 
 
 class ParentNode(HTMLNode):
-    def __init__(self, tag: str, children: list[HTMLNode], props: dict|None=None):
+    def __init__(self, tag: str, children: list[HTMLNode] | list[LeafNode], props: dict|None=None):
         super().__init__(tag=tag, children=children, props=props)
 
     def to_html(self):
@@ -54,6 +54,6 @@ class ParentNode(HTMLNode):
         if props_str:
             props_str = f" {props_str}" # Adding space in the start so the format correct
 
-        all_children = "".join(child.to_html() for child in self.children)
+        all_children = "".join(list_of_child.to_html() for list_of_child in self.children)
         return f"<{self.tag}{props_str}>{all_children}</{self.tag}>"
     
