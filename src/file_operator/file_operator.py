@@ -2,7 +2,7 @@ import os
 import shutil
 
 def remove_public() -> None:
-    public_filepath =  "public"
+    public_filepath =  "docs"
     is_exist = os.path.exists(public_filepath)
     if not is_exist:
         raise Exception("public directory doesnt exist")
@@ -14,7 +14,7 @@ def remove_public() -> None:
             shutil.rmtree(item_path)
 
 def copy_filepath(relative_path: str="") -> None:
-    public_filepath = "public"
+    public_filepath = "docs"
     static_filepath = "static"
     joined_public_path = os.path.join(public_filepath, relative_path)
     joined_static_path = os.path.join(static_filepath, relative_path)

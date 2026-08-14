@@ -10,6 +10,7 @@ def main():
     y_or_n_question = input("You sure you want to proceed? this will remove all your file in public folder? (y/n)")
     if y_or_n_question == "y":
         generate_pages_recursive("content", "template.html", 'docs', basepath)
+        copy_filepath()
     elif y_or_n_question == "n":
         print("Operation Terminated")
         return
