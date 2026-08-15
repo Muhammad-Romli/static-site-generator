@@ -20,8 +20,8 @@ By every law this world has ever taught, to stop is to lose. There is no ledger 
 
 ### The Other Way
 
-- **[The Dao Beyond the Peak](/knowledge_of_dao)** — On the beauty of the cultivation world that exists beside, not beneath, the pursuit of higher realms.
-- **[Beyond the Race to Heaven](/cultivation_world)** — A reflection on what is lost when ascension becomes the only thing worth chasing.
-- **[How to Reach Your Dao](/reaching_your_dao)** — Not a technique manual, but a quiet guide to finding a path that is truly your own.
+- **[The Dao Beyond the Peak](blog/knowledge_of_dao)** — On the beauty of the cultivation world that exists beside, not beneath, the pursuit of higher realms.
+- **[Beyond the Race to Heaven](blog/cultivation_world)** — A reflection on what is lost when ascension becomes the only thing worth chasing.
+- **[How to Reach Your Dao](blog/reaching_your_dao)** — Not a technique manual, but a quiet guide to finding a path that is truly your own.
 
 None of what follows in this study will make a disciple climb faster, and none of it is meant to. It is only a record, kept by someone who chose to stop running long enough to notice that the mountain was still there, still green beneath a still-blue sky, entirely unconcerned with who reached its peak first — or whether anyone reached it at all.
