@@ -2,7 +2,7 @@ import re
 from src.text_node import TextNode, TextType
 
 def split_nodes_delimiter(old_nodes: list[TextNode], delimiter: str, text_type: TextType) -> list[TextNode]:
-    valid_delimiter = ("`", "**", "_")
+    valid_delimiter = ("`", "*", "**", "_", "__")
     finished_list = []
     if delimiter not in valid_delimiter:
         raise Exception(f"delimiter does not exist")
@@ -15,6 +15,8 @@ def split_nodes_delimiter(old_nodes: list[TextNode], delimiter: str, text_type: 
             finished_list.append(node)
             continue
         splitted_nodes = node.text.split(delimiter)
+        if len(splitted_nodes) % 2 == 0:
+            raise Exception("Some tags is not closed")
 
         for i in range(len(splitted_nodes)):
             if splitted_nodes[i] == "":
@@ -23,7 +25,6 @@ def split_nodes_delimiter(old_nodes: list[TextNode], delimiter: str, text_type: 
                 finished_list.append(TextNode(splitted_nodes[i], TextType.TEXT))
             else:
                 finished_list.append(TextNode(splitted_nodes[i], text_type))
-            
     return finished_list
 
 
@@ -32,8 +33,10 @@ def text_to_textnodes(text: str) -> list[TextNode]:
     second = split_nodes_link(first)
     third = split_nodes_delimiter(second, "`", TextType.CODE)
     fourth = split_nodes_delimiter(third, "**", TextType.BOLD)
-    fifth = split_nodes_delimiter(fourth, "_", TextType.ITALIC)
-    return fifth
+    fifth = split_nodes_delimiter(fourth, "*", TextType.ITALIC)
+    sixth = split_nodes_delimiter(fifth, "__", TextType.BOLD)
+    seventh = split_nodes_delimiter(sixth, "_", TextType.ITALIC)
+    return seventh
     
 
 
