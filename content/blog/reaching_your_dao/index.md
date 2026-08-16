@@ -2,7 +2,7 @@
 
 [< Back Home](/)
 
-![A single path winding up a green mountain under a blue sky](/images/mountain.jpg)
+![Wise man see no evil, hear no evil, speak no evil and totally do no evil](/images/fang_yuan_sitting.jpg)
 
 > "Ask a hundred cultivators for the way, and you will hear a hundred paths. Ask which one is correct, and the mountain itself will stay silent — for it was never its place to answer."
 
