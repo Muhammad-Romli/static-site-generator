@@ -221,9 +221,10 @@ blockquote p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   max-height: 480px;
-  object-fit: contain;
   background: linear-gradient(160deg, rgba(13, 43, 78, 0.9), rgba(31, 74, 58, 0.9));
   margin: 2.2em auto;
   border-radius: 4px;
@@ -233,6 +234,28 @@ img {
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(45, 106, 94, 0.3);
+}
+
+/* Two-column layout: only the lone_cultivator image + its quote */
+p:has(img[src="/static-site-generator/images/lone_cultivator.jpg"]) {
+  float: left;
+  width: 48%;
+  margin: 1em 2% 1em 0;
+}
+
+p:has(img[src="/static-site-generator/images/lone_cultivator.jpg"]) img {
+  margin: 0;
+  width: 100%;
+}
+
+p:has(img[src="/static-site-generator/images/lone_cultivator.jpg"]) + blockquote {
+  float: left;
+  width: 48%;
+  margin: 1em 0 1em 2%;
+}
+
+p:has(img[src="/static-site-generator/images/lone_cultivator.jpg"]) + blockquote + p {
+  clear: both;
 }
 
 ::-webkit-scrollbar {
@@ -281,5 +304,12 @@ img {
 
   blockquote {
     padding: 1.1em 1.2em 1.1em 2em;
+  }
+
+  p:has(img[src="/static-site-generator/images/lone_cultivator.jpg"]),
+  p:has(img[src="/static-site-generator/images/lone_cultivator.jpg"]) + blockquote {
+    float: none;
+    width: 100%;
+    margin: 1.5em 0;
   }
 }

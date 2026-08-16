@@ -2,7 +2,7 @@
 
 [< Back Home](/)
 
-![Waterfall covered by mist](/images/waterfall.png)
+![Waterfall covered by mist](/images/waterfall.jpg)
 
 > "Those who chase only the summit see nothing but stone beneath their feet. Those who walk the Dao see the whole mountain breathe."
 
