@@ -14,7 +14,7 @@ background:
   radial-gradient(ellipse 60% 40% at 20% 12%, rgba(255, 255, 255, 0.07), transparent 60%),
   radial-gradient(ellipse 50% 30% at 82% 8%, rgba(255, 255, 255, 0.05), transparent 60%),
   radial-gradient(ellipse 70% 35% at 50% 92%, rgba(255, 255, 255, 0.04), transparent 60%),
-  linear-gradient(180deg, #5a4420 0%, #3d3a28 8%, #16324f 16%, #0d2b4e 24%, #1a4a6e 42%, #2d6a5e 68%, #1f4a3a 100%);
+  linear-gradient(180deg, #5a4420 0%, #4a4a28 12%, #2f5a48 28%, #2d6a5e 48%, #24594a 76%, #1f4a3a 100%);
   background-attachment: scroll;
   color: #eaf4ec;
   font-family: 'EB Garamond', Georgia, serif;
