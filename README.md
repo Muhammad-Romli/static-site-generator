@@ -39,3 +39,7 @@ A command-line tool that converts Markdown (a lightweight markup language) into 
 ![Screenshot with image](image_preview/screenshot_1.png)
 ![Screenshot with code](image_preview/screenshot_2.png)
 ![Screenshot with list of links](image_preview/screenshot_3.png)
+
+
+## Preview
+https://muhammad-romli.github.io/static-site-generator/
