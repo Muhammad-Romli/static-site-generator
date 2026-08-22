@@ -29,7 +29,7 @@ A command-line tool that converts Markdown (a lightweight markup language) into 
 1. The `static` folder's contents are copied recursively into the `public` directory. `index.css` is copied as-is, and `template.html` is prepared as the base template for the next step.
 2. Every `.md` file in the `content` directory is recursively converted into an `.html` file, following steps 2.1–2.5:
    1. The Markdown file is split into blocks, each assigned a type, since HTML structures content the same way (e.g. code block, paragraph block, header block).
-   2. Each block is split into `TextNode's`.
+   2. Each block is split into `TextNodes`.
    3. Each `TextNode` is converted into an `HTMLNode`.
    4. Each `HTMLNode` is converted into HTML code, depending on whether it's a `ParentNode` or a `LeafNode`.
    5. This process repeats for every `.md` file, and the output is copied into the `docs` folder (or a custom folder, configurable in `main.py`).
